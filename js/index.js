@@ -13,7 +13,7 @@ const renderTask = (task) => {
     const li = document.createElement("li");
     li.setAttribute('class','list-group-item');
     li.setAttribute('data-key',task.getId().toString());
-    li.innerHTML = task.getText();
+    //li.innerHTML = task.getText();
     renderSpan(li,task.getText())
     renderLink(li,task.getId())
     list.append(li);
